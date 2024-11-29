@@ -3,8 +3,8 @@
 CONTAINERS=("fedora" "centos7" "ubuntu")
 IMAGES=("pycontribs/fedora:latest" "pycontribs/centos:7" "pycontribs/ubuntu:latest")
 
-ANSIBLE_PLAYBOOK="/home/barmaq/ansible/ansible-01-base/playbook/site.yml"
-INVENTORY="/home/barmaq/ansible/ansible-01-base/playbook/inventory/prod.yml"
+ANSIBLE_PLAYBOOK="./site.yml"
+INVENTORY="./inventory/prod.yml"
 
 #запускаем контейнеры
 for i in "${!CONTAINERS[@]}"; do
